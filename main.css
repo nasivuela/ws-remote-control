@@ -1,0 +1,44 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+#d-pad {
+  height: 100%;
+  border-radius: 50%;
+  background: grey;
+  overflow: hidden;
+}
+
+@media all and (orientation: portrait) {
+  #d-pad {
+    margin: 5vw;
+    width: 90vw;
+    height: 90vw;
+  }
+}
+
+@media all and (orientation: landscape) {
+  #d-pad {
+    margin: 5vh;
+    width: 90vh;
+    height: 90vh;
+  }
+}
+
+#d-control {
+  width: 60px;
+  height: 60px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all .1s ease;
+}
+
+#d-control.dragged {
+  box-shadow: 0px 0px 0px 16px blueviolet;
+}
